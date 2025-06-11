@@ -1,0 +1,23 @@
+<form id="admissionForm">
+  <h2>Admission for Next Year</h2>
+  <label>Full Name:</label>
+  <input type="text" required>
+  <label>Department:</label>
+  <select><option>CS</option><option>EC</option>
+><option>EEE</option>><option>AIL/CSD</option><option>Civil</option></select>
+
+  <h3>Payment</h3>
+  <label>Card Number:</label>
+  <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+  <label>Amount:</label>
+  <input type="number" value="15000" readonly>
+
+  <button type="submit">Pay & Submit</button>
+</form>
+
+<script>
+document.getElementById("admissionForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Admission form submitted and payment simulated!");
+});
+</script>
